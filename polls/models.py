@@ -15,7 +15,7 @@ class Question(models.Model):
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
 
     def is_this_privacy_invasion(self):
-        return self.question_text == "Are you single" or self.question_text == "how big is your twig"
+        return self.question_text == "Are you there?"
 
 
 class Choice(models.Model):
