@@ -1,0 +1,12 @@
+{% if q_text %}
+    <h1>
+        {{ q_text }}
+    </h1>
+    <br>
+    <h2>
+        This is where you will be able to vote for question {{ q_id }}. 
+    </h2>
+    <hr>
+{% else %}
+    <p>No such question exists</p>
+{% endif %} 
